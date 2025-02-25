@@ -1,0 +1,26 @@
+nav{
+    font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  font-size: 12px;
+}
+
+body{
+    font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+nav img{
+    height: 14px;
+}
+
+.hero{
+    background-color: #EEF1FB;
+    height: 450px;
+}
+
+.car-card-single{
+    border-radius: 7%;
+}
