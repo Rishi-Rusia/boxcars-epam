@@ -1,0 +1,34 @@
+{
+    "cars": [
+      { "id": 1, "carName": "Maruti Alto K10", "image": "./images/cars/altok10.webp", "price": 5500 },
+      { "id": 2, "carName": "Audi Q6", "image": "./images/cars/audiq6.avif", "price": 67000 },
+      { "id": 3, "carName": "Audi Q8", "image": "./images/cars/audiq8.avif", "price": 90000 },
+      { "id": 4, "carName": "BMW X5", "image": "./images/cars/bmwx5.webp", "price": 78000 },
+      { "id": 5, "carName": "BMW XM", "image": "./images/cars/bmwxm.webp", "price": 130000 },
+      { "id": 6, "carName": "Ford Transit", "image": "./images/cars/ford-transit.png", "price": 35000 },
+      { "id": 7, "carName": "Hyundai Creta", "image": "./images/cars/hundaicreta.avif", "price": 21000 },
+      { "id": 8, "carName": "Toyota Innova Crysta", "image": "./images/cars/innovacrysta.webp", "price": 32000 },
+      { "id": 9, "carName": "Kia EV9", "image": "./images/cars/kiaev9.avif", "price": 48000 },
+      { "id": 10, "carName": "Kia Green Edition", "image": "./images/cars/kiagreen.avif", "price": 52000 },
+      { "id": 11, "carName": "Kia Seltos", "image": "./images/cars/kiaseltos.webp", "price": 27500 },
+      { "id": 12, "carName": "Renault Kwid", "image": "./images/cars/kwid.avif", "price": 8000 },
+      { "id": 13, "carName": "Lamborghini Urus", "image": "./images/cars/lamborghiniurus.avif", "price": 250000 },
+      { "id": 14, "carName": "Land Rover Defender", "image": "./images/cars/landrover.jpg", "price": 95000 },
+      { "id": 15, "carName": "Land Rover Discovery", "image": "./images/cars/landroverdiscover.webp", "price": 78000 },
+      { "id": 16, "carName": "Land Rover Range Sport", "image": "./images/cars/landroverrangesport.webp", "price": 102000 },
+      { "id": 17, "carName": "Mahindra BE6", "image": "./images/cars/mahindrabe6.avif", "price": 39000 },
+      { "id": 18, "carName": "Mahindra Scorpio", "image": "./images/cars/mahindrascorpio.avif", "price": 34000 },
+      { "id": 19, "carName": "Mahindra Thar", "image": "./images/cars/mahindrathar.webp", "price": 28000 },
+      { "id": 20, "carName": "Mercedes-Benz GLS", "image": "./images/cars/mercedesbenzgls.avif", "price": 99000 },
+      { "id": 21, "carName": "Porsche Cayenne", "image": "./images/cars/porschecayenne.webp", "price": 115000 },
+      { "id": 22, "carName": "Rolls-Royce Phantom", "image": "./images/cars/rolls-royce-phantom.webp", "price": 450000 },
+      { "id": 23, "carName": "Maruti S-Presso", "image": "./images/cars/s-presso.webp", "price": 6000 },
+      { "id": 24, "carName": "Sealion", "image": "./images/cars/Sealion.avif", "price": 75000 },
+      { "id": 25, "carName": "Tata Nexon", "image": "./images/cars/tatanexon.jpg", "price": 18500 },
+      { "id": 26, "carName": "Tata Safari", "image": "./images/cars/tatasafari.webp", "price": 26000 },
+      { "id": 27, "carName": "Tata Tiago", "image": "./images/cars/tatatiago.avif", "price": 11000 },
+      { "id": 28, "carName": "Toyota Chrysler", "image": "./images/cars/toyotachrysler.webp", "price": 41000 },
+      { "id": 29, "carName": "XEV9E", "image": "./images/cars/xev9e.avif", "price": 57000 }
+    ]
+  }
+  

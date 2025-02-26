@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body class="">
@@ -28,14 +30,16 @@
                         <div class="ml-2 text-gray-700">+75 123 456 7890</div>
                     </div>
                 </div>
-    
+
                 <!-- Hamburger Icon (Mobile) -->
                 <button id="menu-btn" class="md:hidden focus:outline-none">
-                    <svg class="w-8 h-8 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    <svg class="w-8 h-8 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
-    
+
                 <!-- Navigation Links -->
                 <div id="menu" class="hidden md:flex md:items-center md:space-x-6">
                     <ul class="flex flex-col md:flex-row md:space-x-6 text-gray-700">
@@ -48,7 +52,7 @@
                         <li><a href="#" class="block py-2 md:py-0">Sign in</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Submit Button -->
                 <div class="hidden md:block">
                     <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
@@ -56,7 +60,7 @@
                     </button>
                 </div>
             </div>
-    
+
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-white py-4">
                 <ul class="text-gray-700 space-y-2">
@@ -87,23 +91,21 @@
             <h6 class="text-xs sm:text-sm font-medium text-gray-600">
                 Find cars for sale and rent near you
             </h6>
-        
+
             <!-- Main Heading -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3">
                 Find Your Dream Car
             </h1>
-        
+
             <!-- Search Bar -->
             <div class="search-bar mt-5 h-12 w-full max-w-lg rounded-3xl bg-white shadow-md">
                 <!-- Search input & button can be added here -->
             </div>
-        
+
             <!-- Hero Image -->
-            <img class="w-full max-w-md md:max-w-lg lg:max-w-2xl mt-5" 
-                 src="./images/car.png" 
-                 alt="Hero Car">
+            <img class="w-full max-w-md md:max-w-lg lg:max-w-2xl mt-5" src="./images/car.png" alt="Hero Car">
         </div>
-        
+
     </header>
     <!-- HEADER ENDS -->
 
@@ -157,7 +159,8 @@
 
         <section class="browse-by-type my-16 mx-20 sm:mx-16 md:mx-20 lg:mx-28">
             <h3 class="text-3xl font-semibold text-center">Browse by Type</h3>
-            <ul class="type-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 my-7 justify-center">
+            <ul
+                class="type-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 my-7 justify-center">
                 <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
                     <img src="./images/sedan.png" class="h-10" alt="">
                     <p class="font-semibold text-sm md:text-base">Sedan</p>
@@ -196,7 +199,7 @@
                 </li>
             </ul>
         </section>
-        
+
         <!-- BUYER SELLER CARDS -->
 
         <section class="buyer-seller-cards my-20 flex md:flex-row flex-col sm:w-full items-center mx-10 justify-evenly">
@@ -232,114 +235,26 @@
                 <li class="mx-2 border-b-2 border-blue-600 pb-4">Convertible</li>
             </ul>
 
-            <div class="car-cards flex justify-between my-10 mx-30">
+            <div class="md:mx-28 mx-10 mt-4">
+                <div class="swiper w-full flex justify-center ">
+                    <div id="most-searched-cars-container" class="car-cards swiper-wrapper">
 
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
+                        
+
                     </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
+                    <div class="swiper-pagination"></div>
 
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
-                    </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
-                    </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
+
+
+
         </section>
 
         <!-- WHY CHOOSE US? -->
@@ -392,114 +307,24 @@
                 <li class="mx-2 border-b-2 border-blue-600 pb-4">Convertible</li>
             </ul> -->
 
-            <div class="car-cards flex justify-between my-10 mx-30">
+            <div class="md:mx-28 mx-10 mt-4">
+                <div class="swiper w-full flex justify-center ">
+                    <div id="latest-cars-container" class="car-cards swiper-wrapper">
 
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
+                        
+
                     </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
+                    <div class="swiper-pagination"></div>
 
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
-                    </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="car-card-single w-80">
-                    <div class="card-card-single-header">
-                        <img class="w-full rounded-t-3xl" src="./images/Sample-car.png" alt="">
-                    </div>
-                    <div class="car-card-single-footer rounded-b-3xl bg-[#050B20] text-white p-2">
-                        <div class="card-first-row p-2">
-                            <h2 class="text-xl">Ford Transit-2021</h2>
-                            <p class="text-base">Lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-                        <div class="card-features flex justify-between mx-2 p-2">
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-                            <div class="feature-square">
-                                <img src="./images/speed.png" alt="">
-                                <p>50 miles</p>
-                            </div>
-
-                        </div>
-
-                        <hr class="h-1 mx-2 text-gray-500 opacity-50 my-1 p-1">
-
-                        <div class="card-third-row flex justify-between mx-2 p-2">
-                            <p class="font-bold text-xl">$22000</p>
-                            <button class="text-white">View Details</button>
-                        </div>
-                    </div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
+
         </section>
 
         <!-- NEED SOME INSPIRATION -->
@@ -535,7 +360,7 @@
 
         <!-- WHO IS BOXCAR? -->
 
-        <section>
+        <!-- <section>
             <div class="flex bg-[#405FF2] px-14 mx-20 my-10 py-14 items-center justify-center rounded-2xl">
                 <div class="who-is-boxcar-left flex-1 mx-5">
                     <h3 class="text-2xl font-semibold text-white">
@@ -553,11 +378,32 @@
 
                 </div>
             </div>
+        </section> -->
+
+        <section>
+            <div
+                class="flex flex-col sm:flex-row bg-[#405FF2] px-6 sm:px-14 mx-4 sm:mx-20 my-10 py-10 sm:py-14 items-center justify-center rounded-2xl">
+                <div class="who-is-boxcar-left flex-1 mx-4 sm:mx-5 text-center sm:text-left">
+                    <h3 class="text-2xl font-semibold text-white">
+                        Who is BoxCars?
+                    </h3>
+                    <p class="text-white my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="who-is-boxcar-right flex flex-wrap justify-center sm:justify-end gap-4 mt-6 sm:mt-0">
+                    <img class="h-28 sm:h-36 mx-2" src="./images/review.png" alt="Review">
+                    <img class="h-28 sm:h-36 mx-2" src="./images/review.png" alt="Review">
+                    <img class="h-28 sm:h-36 mx-2" src="./images/review.png" alt="Review">
+                </div>
+            </div>
         </section>
+
 
         <!-- OUR TEAM -->
 
-        <section class="why-choose-us mt-20 mb-30">
+        <!-- <section class="why-choose-us mt-20 mb-30">
             <h3 class="text-3xl font-semibold text-center">
                 Our Team
             </h3>
@@ -581,7 +427,33 @@
 
             </div>
 
+        </section> -->
+
+        <section class="why-choose-us mt-10 sm:mt-20 mb-10 sm:mb-30">
+            <h3 class="text-3xl font-semibold text-center">
+                Our Team
+            </h3>
+
+            <div
+                class="why-us-cards grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center mt-5 px-4 sm:px-10">
+                <div class="why-us-card-single flex justify-center py-3">
+                    <img src="./images/Employee.png" class="w-full max-w-[120px] md:max-w-[150px]" alt="Employee">
+                </div>
+                <div class="why-us-card-single flex justify-center py-3">
+                    <img src="./images/Employee.png" class="w-full max-w-[120px] md:max-w-[150px]" alt="Employee">
+                </div>
+                <div class="why-us-card-single flex justify-center py-3">
+                    <img src="./images/Employee.png" class="w-full max-w-[120px] md:max-w-[150px]" alt="Employee">
+                </div>
+                <div class="why-us-card-single flex justify-center py-3">
+                    <img src="./images/Employee.png" class="w-full max-w-[120px] md:max-w-[150px]" alt="Employee">
+                </div>
+                <div class="why-us-card-single flex justify-center py-3">
+                    <img src="./images/Employee.png" class="w-full max-w-[120px] md:max-w-[150px]" alt="Employee">
+                </div>
+            </div>
         </section>
+
 
         <!-- BLOG POSTS -->
 
@@ -590,39 +462,92 @@
                 Latest Blog Posts
             </h3>
 
-            <div class="why-us-cards justify-center mt-5 mx-30 flex">
-                <div class="why-us-card-single py-3 h-50 w-80">
-                    <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
-                    <div class="flex ml-2 mr-10 justify-between">
-                        <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+            <div class="md:mx-28 mx-8 mb-5">
+                <div class="swiper">
+                    <div class="why-us-card swiper-wrapper mt-5">
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+                        <div class="swiper-slide why-us-card-single py-3 h-50 w-80">
+                            <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
+                            <div class="flex ml-2 mr-10 justify-between">
+                                <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
+                            </div>
+                            <h6 class="text-base text-wrap mx-2 mt-1">
+                                BMW M6X5 dolor sit amet consectetur adipisicing elit.
+                            </h6>
+                        </div>
+    
                     </div>
-                    <h6 class="text-base text-wrap mx-2 mt-1">
-                        BMW M6X5 dolor sit amet consectetur adipisicing elit.
-                    </h6>
-                </div><div class="why-us-card-single py-3 h-50 w-80">
-                    <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
-                    <div class="flex ml-2 mr-10 justify-between">
-                        <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
-                    </div>
-                    <h6 class="text-base text-wrap mx-2 mt-1">
-                        BMW M6X5 dolor sit amet consectetur adipisicing elit.
-                    </h6>
-                </div><div class="why-us-card-single py-3 h-50 w-80">
-                    <img src="./images/BlogPost.png" class="mx-2.5 h-48 rounded-xl" alt="">
-                    <div class="flex ml-2 mr-10 justify-between">
-                        <p class="text-xs font-light">Admin &nbsp;&nbsp;&nbsp; November 22, 2023</p>
-                    </div>
-                    <h6 class="text-base text-wrap mx-2 mt-1">
-                        BMW M6X5 dolor sit amet consectetur adipisicing elit.
-                    </h6>
+    
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+    
+                    
                 </div>
             </div>
+            
+
 
         </section>
 
         <!-- PREMIUM BRANDS -->
 
-        <section class="mt-10">
+        <!-- <section class="mt-10">
             <div class="flex px-14 mx-20 my-10 py-10 items-center justify-center rounded-2xl">
                 <div class="who-is-boxcar-left mx-8">
                     <h3 class="text-4xl font-semibold my-2">
@@ -638,11 +563,34 @@
                     <img src="./images/premium-brands.png" alt="">
                 </div>
             </div>
+        </section> -->
+
+        <section class="mt-10">
+            <div
+                class="flex flex-col sm:flex-row px-6 sm:px-14 mx-4 sm:mx-20 my-10 py-10 items-center justify-center rounded-2xl bg-gray-100">
+                <div class="who-is-boxcar-left mx-4 sm:mx-8 text-center sm:text-left">
+                    <h3 class="text-3xl sm:text-4xl font-semibold my-2">
+                        Explore Our Premium <br class="hidden sm:block"> Brands
+                    </h3>
+                    <p class="text-wrap my-2 text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque. Lorem ipsum dolor sit amet.
+                    </p>
+                    <button class="p-3 text-sm font-semibold text-white bg-[#405FF2] rounded-xl mt-2">
+                        Show All Brands
+                    </button>
+                </div>
+
+                <div class="who-is-boxcar-right flex justify-center sm:justify-end mt-6 sm:mt-0">
+                    <img src="./images/premium-brands.png" alt="Premium Brands"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg">
+                </div>
+            </div>
         </section>
+
 
         <!-- JOIN BOXCAR -->
 
-        <section class="why-choose-us w-full flex justify-center mb-20">
+        <!-- <section class="why-choose-us w-full flex justify-center mb-20">
 
             <div class="">
                 <h3 class="text-3xl font-semibold text-center">
@@ -659,13 +607,35 @@
                 </form>
             </div>
 
+        </section> -->
+
+        <section class="why-choose-us w-full flex justify-center mb-20 px-4">
+            <div class="w-full max-w-lg">
+                <h3 class="text-3xl font-semibold text-center">
+                    Join BoxCar
+                </h3>
+
+                <p class="text-base mt-2 text-center">
+                    Receive pricing updates, shopping tips & more!
+                </p>
+
+                <form
+                    class="flex flex-col sm:flex-row border-gray-300 rounded-xl border border-opacity-40 mt-6 sm:mt-2 h-auto w-full">
+                    <input class="p-3 outline-none flex-1 rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none" type="text"
+                        placeholder="Enter your email">
+                    <button
+                        class="bg-[#405FF2] text-white p-4 rounded-b-xl sm:rounded-r-xl sm:rounded-bl-none inline-flex items-center justify-center">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
         </section>
 
     </main>
     <!-- MAIN SECTION ENDS -->
-     <hr class="text-gray-300 mb-10">
-     <footer class="flex justify-between mx-30 pb-10">
-        <ul class="flex flex-col gap-2">
+    <hr class="text-gray-300 mb-10">
+    <footer class="grid grid-cols-2 sm:grid-cols-4 gap-6 px-6 sm:px-20 pb-10">
+        <ul class="flex flex-col gap-2 text-center sm:text-left">
             <li class="text-lg font-semibold">Company</li>
             <li class="text-sm">About</li>
             <li class="text-sm">Blog</li>
@@ -673,20 +643,21 @@
             <li class="text-sm">FAQs</li>
             <li class="text-sm">Terms</li>
             <li class="text-sm">Contact Us</li>
+            <li class="text-sm">Contact Us</li>
         </ul>
-        
-        <ul class="flex flex-col gap-2">
-            <li class="text-lg font-semibold">Company</li>
+
+        <ul class="flex flex-col gap-2 text-center sm:text-left">
+            <li class="text-lg font-semibold">Support</li>
             <li class="text-sm">Get in Touch</li>
             <li class="text-sm">Help Center</li>
             <li class="text-sm">Live Chat</li>
             <li class="text-sm">How it Works</li>
         </ul>
-    
-        <ul class="flex flex-col gap-2">
-            <li class="text-lg font-semibold">Vehicles Type</li>
+
+        <ul class="flex flex-col gap-2 text-center sm:text-left">
+            <li class="text-lg font-semibold">Vehicle Types</li>
             <li class="text-sm">Sedan</li>
-            <li class="text-sm">HatchBack</li>
+            <li class="text-sm">Hatchback</li>
             <li class="text-sm">SUV</li>
             <li class="text-sm">Hybrid</li>
             <li class="text-sm">Electric</li>
@@ -694,31 +665,32 @@
             <li class="text-sm">Truck</li>
             <li class="text-sm">Convertible</li>
         </ul>
-    
-        <div>
-            <div class="flex flex-col gap-2 mb-2">
+
+        <div class="text-center sm:text-left">
+            <div class="flex flex-col gap-2 mb-4">
                 <p class="text-lg font-semibold">Safe Hours</p>
-                <p class="text-sm">Monday-Friday - 9:00 AM - 9:00 PM</p>            
-                <p class="text-sm">Monday-Friday - 9:00 AM - 9:00 PM</p>
-                <p class="text-sm">Monday-Friday - 9:00 AM - 9:00 PM</p>
+                <p class="text-sm">Monday-Friday: 9:00 AM - 9:00 PM</p>
+                <p class="text-sm">Saturday-Sunday: 10:00 AM - 8:00 PM</p>
             </div>
-    
+
             <div>
                 <p class="text-lg font-semibold mb-2">Connect With Us</p>
-                <div class="flex gap-2">
-                    <img src="./images/Symbol.png" class="h-4" alt="">
-                    <img src="./images/Symbol.png" class="h-4" alt="">
-                    <img src="./images/Symbol.png" class="h-4" alt="">
-                    <img src="./images/Symbol.png" class="h-4" alt="">
+                <div class="flex justify-center sm:justify-start gap-2">
+                    <img src="./images/Symbol.png" class="h-5" alt="Social">
+                    <img src="./images/Symbol.png" class="h-5" alt="Social">
+                    <img src="./images/Symbol.png" class="h-5" alt="Social">
+                    <img src="./images/Symbol.png" class="h-5" alt="Social">
                 </div>
             </div>
         </div>
     </footer>
+
     <hr class="text-gray-300 mb-5">
     <p class="text-sm text-center mb-5">&copy; Rishi Rusia</p>
-    
-    
-</body>
 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
+
 </html>
