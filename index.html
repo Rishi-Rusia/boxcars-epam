@@ -44,7 +44,7 @@
                 <!-- Navigation Links -->
                 <div id="menu" class="hidden md:flex md:items-center md:space-x-6">
                     <ul class="flex flex-col md:flex-row md:space-x-6 text-gray-700">
-                        <li><a href="#" class="block py-2 md:py-0">Home</a></li>
+                        <li><a href="#" class="block py-2 md:py-0" id="nav-main-home-button">Home</a></li>
                         <li><a href="#" class="block py-2 md:py-0">Listings</a></li>
                         <li><a href="#" class="block py-2 md:py-0">Blog</a></li>
                         <li><a href="#" class="block py-2 md:py-0">Pages</a></li>
@@ -80,12 +80,6 @@
         </nav>
 
         <!-- HERO SECTION -->
-        <!-- <div class="hero flex flex-col items-center justify-end">
-            <h6 class="text-sm font-medium">Find cars for sale and rent near you</h6>
-            <h1 class="text-5xl font-bold m-5">Find Your Dream Car</h1>
-            <div class="search-bar mt-5 h-13 w-140 rounded-3xl bg-white"></div>
-            <img class="h-50 mt-5" src="./images/hero-car.png" alt="">
-        </div> -->
 
         <div class="hero flex flex-col items-center justify-center text-center px-5">
             <!-- Small Text -->
@@ -99,155 +93,51 @@
             </h1>
 
             <!-- Search Bar -->
-            <!-- <div class="search-bar mt-5 h-12 w-full max-w-lg rounded-3xl bg-white shadow-md">
 
-                <div class="flex justify-between ml-4 h-12 items-center">
-                    <select class="outline-none" name="brand-dropdown" aria-placeholder="" id="brand-dropdown">
-                        <option value="">Any Brand</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                        <option value="lamborghini">Labmborghini</option>
-                    </select>
-                    <select class="outline-none" name="brand-dropdown" aria-placeholder="" id="brand-dropdown">
-                        <option value="">Any Brand</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                        <option value="lamborghini">Labmborghini</option>
-                    </select>
-                    <select class="outline-none" name="brand-dropdown" aria-placeholder="" id="brand-dropdown">
-                        <option value="">Any Brand</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                        <option value="lamborghini">Labmborghini</option>
-                    </select>
-                    <button class="cursor-pointer rounded-r-full bg-blue-400 h-12 w-14"><i class="fa fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                
-            </div> -->
+            
+            <form id="main-search-form" class="search-bar mt-5 h-auto w-full max-w-lg rounded-3xl bg-white shadow-md p-2">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-2">
+                    <select id="brand-select-dropdown" class="cursor-pointer w-full sm:w-auto px-3 py-2 rounded-md  outline-none">
 
-            <div class="search-bar mt-5 h-12 w-full max-w-lg rounded-3xl bg-white shadow-md">
-                <div class="flex justify-between ml-4 h-12 items-center">
-                    <select class="outline-none cursor-pointer" name="brand-dropdown" id="brand-dropdown">
-                        <option class="cursor-pointer" value="">Any Brand</option>
-                        <option class="cursor-pointer" value="mercedes">Mercedes</option>
-                        <option class="cursor-pointer" value="audi">Audi</option>
-                        <option class="cursor-pointer" value="lamborghini">Lamborghini</option>
                     </select>
-                    <select class="outline-none cursor-pointer" name="brand-dropdown" id="brand-dropdown">
-                        <option class="cursor-pointer" value="">Any Brand</option>
-                        <option class="cursor-pointer" value="mercedes">Mercedes</option>
-                        <option class="cursor-pointer" value="audi">Audi</option>
-                        <option class="cursor-pointer" value="lamborghini">Lamborghini</option>
+                    <select id="type-select-dropdown" class="cursor-pointer w-full sm:w-auto px-3 py-2 rounded-md outline-none">
+                        
                     </select>
-                    <select class="outline-none cursor-pointer" name="brand-dropdown" id="brand-dropdown">
-                        <option class="cursor-pointer" value="">Any Brand</option>
-                        <option class="cursor-pointer" value="mercedes">Mercedes</option>
-                        <option class="cursor-pointer" value="audi">Audi</option>
-                        <option class="cursor-pointer" value="lamborghini">Lamborghini</option>
+                    <select id="price-select-dropdown" class="cursor-pointer w-full sm:w-auto px-3 py-2 rounded-md  outline-none">
+                        
                     </select>
-                    <button class="cursor-pointer rounded-r-full bg-blue-400 h-12 w-14">
+                    <button type="submit" class="cursor-pointer rounded-full bg-blue-400 text-white px-4 py-2 sm:h-12 sm:w-14 flex items-center justify-center">
                         <i class="fa fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
-            </div>
+            </form>
             
+
             <!-- Hero Image -->
             <img class="w-full max-w-md md:max-w-lg lg:max-w-2xl mt-5" src="./images/car.png" alt="Hero Car">
         </div>
 
+        <!-- BROWSE BY TYPE -->
+       
+
+        <section id="browse-by-type" class="my-16 mx-20 sm:mx-16 md:mx-20 lg:mx-28 flex flex-col items-center">
+            <h3 class="text-3xl font-semibold text-center">Browse by Type</h3>
+            <div class="flex w-full justify-center">
+                <ul id="browse-by-type-list-id"
+                    class="flex flex-wrap w-full lg:mx-28 md:mx-20 sm:mx-5 justify-between my-7">
+                </ul>
+
+            </div>
+        </section>
+
     </header>
     <!-- HEADER ENDS -->
 
+    
+
     <!-- MAIN SECTION BEGINS -->
-    <main>
-
-        <!-- BROWSE BY TYPE -->
-        <!-- <section class="browse-by-type my-16 w-full">
-            <h3 class="text-3xl font-semibold text-center">
-                Browse by Type
-            </h3>
-            <ul class="type-list flex mx-30 my-7 justify-between">
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-                <li class="border-gray-300 border-1 h-16 w-20 justify-center flex flex-col items-center rounded-xl p-5">
-                    <img src="./images/sedan.png" class="h-8" alt="">
-                    <p class="font-semibold ">Sedan</p>
-                </li>
-            </ul>
-        </section> -->
-
-        <section class="browse-by-type my-16 mx-20 sm:mx-16 md:mx-20 lg:mx-28">
-            <h3 class="text-3xl font-semibold text-center">Browse by Type</h3>
-            <ul
-                class="type-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 my-7 justify-center">
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-                <li class="border border-gray-300 h-24 w-24 flex flex-col items-center justify-center rounded-xl p-4">
-                    <img src="./images/sedan.png" class="h-10" alt="">
-                    <p class="font-semibold text-sm md:text-base">Sedan</p>
-                </li>
-            </ul>
-        </section>
+    <main id="landing-main-content-div-id" class="">
+        
 
         <!-- BUYER SELLER CARDS -->
 
@@ -285,7 +175,7 @@
             </ul>
 
             <div class="md:mx-28 mx-10 mt-4">
-                <div class="swiper w-full flex justify-center ">
+                <div class="swiper w-full flex justify-center">
                     <div id="most-searched-cars-container" class="car-cards swiper-wrapper">
 
                         
@@ -349,13 +239,6 @@
                 Latest Cars
             </h3>
 
-            <!-- <ul class="categories flex m-7 justify-center font-semibold">
-                <li class="mx-2 border-b-2 border-blue-600 pb-4">In Stock</li>
-                <li class="mx-2 border-b-2 border-blue-600 pb-4">SUV</li>
-                <li class="mx-2 border-b-2 border-blue-600 pb-4">Sedan</li>
-                <li class="mx-2 border-b-2 border-blue-600 pb-4">Convertible</li>
-            </ul> -->
-
             <div class="md:mx-28 mx-10 mt-4">
                 <div class="swiper w-full flex justify-center ">
                     <div id="latest-cars-container" class="car-cards swiper-wrapper">
@@ -409,26 +292,6 @@
 
         <!-- WHO IS BOXCAR? -->
 
-        <!-- <section>
-            <div class="flex bg-[#405FF2] px-14 mx-20 my-10 py-14 items-center justify-center rounded-2xl">
-                <div class="who-is-boxcar-left flex-1 mx-5">
-                    <h3 class="text-2xl font-semibold text-white">
-                        Who is BoxCars?
-                    </h3>
-                    <p class="text-wrap text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-
-                <div class="who-is-boxcar-right flex flex-2">
-                    <img class="h-36 mx-2" src="./images//review.png" alt="">
-                    <img class="h-36 mx-2" src="./images//review.png" alt="">
-                    <img class="h-36 mx-2" src="./images//review.png" alt="">
-
-                </div>
-            </div>
-        </section> -->
-
         <section>
             <div
                 class="flex flex-col sm:flex-row bg-[#405FF2] px-6 sm:px-14 mx-4 sm:mx-20 my-10 py-10 sm:py-14 items-center justify-center rounded-2xl">
@@ -451,32 +314,6 @@
 
 
         <!-- OUR TEAM -->
-
-        <!-- <section class="why-choose-us mt-20 mb-30">
-            <h3 class="text-3xl font-semibold text-center">
-                Our Team
-            </h3>
-
-            <div class="why-us-cards justify-center mt-5 mx-30 flex">
-                <div class="why-us-card-single py-3 h-50">
-                    <img src="./images/Employee.png" class="mx-2 h-66" alt="">
-                </div>
-                <div class="why-us-card-single py-3 h-50">
-                    <img src="./images/Employee.png" class="mx-2 h-66" alt="">
-                </div>
-                <div class="why-us-card-single py-3 h-50">
-                    <img src="./images/Employee.png" class="mx-2 h-66" alt="">
-                </div>
-                <div class="why-us-card-single py-3 h-50">
-                    <img src="./images/Employee.png" class="mx-2 h-66" alt="">
-                </div>
-                <div class="why-us-card-single py-3 h-50">
-                    <img src="./images/Employee.png" class="mx-2 h-66" alt="">
-                </div>
-
-            </div>
-
-        </section> -->
 
         <section class="why-choose-us mt-10 sm:mt-20 mb-10 sm:mb-30">
             <h3 class="text-3xl font-semibold text-center">
@@ -596,24 +433,6 @@
 
         <!-- PREMIUM BRANDS -->
 
-        <!-- <section class="mt-10">
-            <div class="flex px-14 mx-20 my-10 py-10 items-center justify-center rounded-2xl">
-                <div class="who-is-boxcar-left mx-8">
-                    <h3 class="text-4xl font-semibold my-2">
-                        Explore Our Premium <br> Brands
-                    </h3>
-                    <p class="text-wrap my-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque. Lorem ipsum dolor sit amet.
-                    </p>
-                    <button class="p-3 text-sm font-semibold text-white bg-[#405FF2] rounded-xl mt-2">Show All Brands</button>
-                </div>
-
-                <div class="who-is-boxcar-right flex">
-                    <img src="./images/premium-brands.png" alt="">
-                </div>
-            </div>
-        </section> -->
-
         <section class="mt-10">
             <div
                 class="flex flex-col sm:flex-row px-6 sm:px-14 mx-4 sm:mx-20 my-10 py-10 items-center justify-center rounded-2xl bg-gray-100">
@@ -639,25 +458,6 @@
 
         <!-- JOIN BOXCAR -->
 
-        <!-- <section class="why-choose-us w-full flex justify-center mb-20">
-
-            <div class="">
-                <h3 class="text-3xl font-semibold text-center">
-                    Join BoxCar
-                </h3>
-    
-                <p class="text-base mt-2 text-center">
-                    Receive pricing updates, shopping tips & more!
-                </p>
-
-                <form class="flex border-gray-300 rounded-xl border-1 mt-2 h-14 w-120 border-opacity-40" action="">
-                    <input class="h2 flex-6 p-3 outline-none" type="text">
-                    <button class="bg-[#405FF2] text-white p-4 rounded-xl m-2 inline-flex items-center flex-1">Sign Up</button>
-                </form>
-            </div>
-
-        </section> -->
-
         <section class="why-choose-us w-full flex justify-center mb-20 px-4">
             <div class="w-full max-w-lg">
                 <h3 class="text-3xl font-semibold text-center">
@@ -682,6 +482,32 @@
 
     </main>
     <!-- MAIN SECTION ENDS -->
+
+    <!-- SEARCH MAIN SECTION BEGINS -->
+
+    <main id="search-main-content-div-id" class="hidden">
+        <section class="search Results">
+            <h3 class="text-4xl font-semibold text-center my-10">
+                SEARCH RESULTS
+            </h3>
+
+           
+
+            <div class="md:ml-28 md:mr-28 mt-4">
+                <div class=" w-full flex justify-center ">
+                    <div id="search-results-container-alt" class="car-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <!-- SEARCH MAIN SECTION ENDS -->
+
     <hr class="text-gray-300 mb-10">
     <footer class="grid grid-cols-2 sm:grid-cols-4 gap-6 px-6 sm:px-20 pb-10">
         <ul class="flex flex-col gap-2 text-center sm:text-left">
